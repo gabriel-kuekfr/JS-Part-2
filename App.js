@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+//import { StatusBar } from 'react-native';
+//import { NavigationContainer } from '@react-navigation/native';
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "./src/views/screens/HomeScreen";
@@ -11,6 +11,8 @@ import DetailsScreen from './src/views/screens/DetailsScreen';
 import CartScreen from './src/views/screens/CartScreen';
 import ShopScreen from './src/views/screens/ShopScreen';
 import ProductsScreen from './src/views/screens/ProductsScreen';
+import ShoppingCartIcon from './src/views/components/ShoppingCartIcon';
+import { Button } from 'react-native';
 //import BottomNavigator from './src/views/navigation/BottomNavigator';
 
 /* const Stack = createStackNavigator();
@@ -35,7 +37,7 @@ const navigator = createStackNavigator (
     OnBoard: {
       screen: OnBoardScreen,
       defaultNavigationOptions: {
-        headerShown: false, //not working, header shown on onboard screen
+        //headerShown: false, //not working, header shown on onboard screen
       },
     },
     Home: HomeScreen,
@@ -46,10 +48,11 @@ const navigator = createStackNavigator (
     Demo: DemoScreen,
   },
   {
-    initialRouteName: "OnBoard",
+    //initialRouteName: "OnBoard",
     defaultNavigationOptions: {
       //only want header to not show on OnBoardScreen - if back buttons work, but they don't
       //headerShown: false,
+      headerRight: () => <ShoppingCartIcon/>
     },
   },
 );

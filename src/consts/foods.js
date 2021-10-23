@@ -27,6 +27,41 @@ const foods = [
     price: '9.55',
     image: require('../assets/sushiMakizushi.png'),
   },
+  {
+    id: '5',
+    name: 'Orange',
+    ingredients: 'Orange',
+    price: '2',
+    image: require('../assets/images/orange.jpg'),
+  },
+  {
+    id: '6',
+    name: 'Tomato',
+    ingredients: 'Tomato',
+    price: '1.5',
+    image: require('../assets/images/tomato.jpg'),
+  },
+  {
+    id: '7',
+    name: 'Salmon',
+    ingredients: 'Salmon',
+    price: '6.5',
+    image: require('../assets/images/salmon.jpg'),
+  },
+  {
+    id: '8',
+    name: 'Salad',
+    ingredients: 'Greens',
+    price: '5.5',
+    image: require('../assets/images/greens.jpg'),
+  },
+  {
+    id: '9',
+    name: 'Rye Bread',
+    ingredients: 'Rye Bread',
+    price: '5.5',
+    image: require('../assets/images/rye-bread.jpg'),
+  },
 ];
 
 export default foods;
